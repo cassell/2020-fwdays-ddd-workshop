@@ -1,0 +1,45 @@
+{
+    "type": "project",
+    "license": "proprietary",
+    "require": {
+        "php": "^7.3.0",
+        "doctrine/doctrine-migrations-bundle": "^2.0",
+        "ramsey/uuid": "^3.7",
+        "symfony/console": "^5.0",
+        "symfony/framework-bundle": "^5.0",
+        "symfony/orm-pack": "^1.0",
+        "symfony/yaml": "^5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.1",
+        "symfony/flex": "^1.0",
+        "symfony/dotenv": "^5.0"
+    },
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Beeriously\\": "src/",
+            "Beeriously\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "auto-scripts": {},
+        "post-install-cmd": [
+            "@auto-scripts"
+        ],
+        "post-update-cmd": [
+            "@auto-scripts"
+        ]
+    },
+    "extra": {
+        "symfony": {
+            "id": "01BXMSAGR73ZWPVXB4TKTVY486",
+            "allow-contrib": false
+        }
+    }
+}
