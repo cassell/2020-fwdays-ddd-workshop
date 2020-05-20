@@ -11,6 +11,7 @@ git clone git@github.com:cassell/2020-fwdays-ddd-workshop.git
 * I would suggest pulling changes again right before the workshop as I might have changed something last minute
 * BYOIDE - Use the code editor that you are most comfortable with. 
 * No web server required. Code will be all backend code.
+* Please have some paper and a pencil handy to take notes and make your own diagrams
 
 However, you will be fine without any preparation for this workshop.
 
