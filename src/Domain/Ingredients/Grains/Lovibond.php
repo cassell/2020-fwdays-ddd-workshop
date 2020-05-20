@@ -6,10 +6,7 @@ class Lovibond
 {
     private const SYMBOL = "°L";
 
-    /**
-     * @var float
-     */
-    private $value;
+    private float $value;
 
     private function __construct(float $value)
     {

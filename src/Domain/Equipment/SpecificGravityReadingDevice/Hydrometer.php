@@ -12,18 +12,9 @@ use Beeriously\Domain\Measurements\Temperature\Temperature;
 
 class Hydrometer
 {
-    /**
-     * @var Temperature
-     */
-    private $calibrationTemperature;
-    /**
-     * @var GravityReading
-     */
-    private $maximumGravityReading;
-    /**
-     * @var GravityReading
-     */
-    private $minimumGravity;
+    private Temperature $calibrationTemperature;
+    private GravityReading $maximumGravityReading;
+    private GravityReading $minimumGravity;
 
     public function __construct(Temperature $calibrationTemperature,
                                 GravityReading $minimumGravity,

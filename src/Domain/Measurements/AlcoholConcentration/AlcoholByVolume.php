@@ -6,7 +6,7 @@ use Beeriously\Domain\Measurements\SpecificGravity\GravityRange;
 
 class AlcoholByVolume
 {
-    private $value;
+    private float $value;
 
     public function __construct(float $value)
     {

@@ -7,24 +7,11 @@ use Beeriously\Domain\Generic\ValueObject\Identifier;
 
 class RecipeNameWasChanged extends RecipeEvent
 {
-    /**
-     * @var RecipeName
-     */
-    private $oldName;
-    /**
-     * @var RecipeName
-     */
-    private $newName;
-    /**
-     * @var \DateTimeImmutable
-     */
-    private $occurredOn;
-    /**
-     * @var RecipeId
-     */
-    private $recipeId;
-
-    private $eventId;
+    private RecipeName $oldName;
+    private RecipeName $newName;
+    private \DateTimeImmutable $occurredOn;
+    private RecipeId $recipeId;
+    private Identifier $eventId;
 
     public function __construct(RecipeId $recipeId, RecipeName $oldName, RecipeName $newName, \DateTimeImmutable $occurredOn)
     {
@@ -35,33 +22,21 @@ class RecipeNameWasChanged extends RecipeEvent
         $this->occurredOn = $occurredOn;
     }
 
-    /**
-     * @return RecipeName
-     */
     public function getOldName(): RecipeName
     {
         return $this->oldName;
     }
 
-    /**
-     * @return RecipeName
-     */
     public function getNewName(): RecipeName
     {
         return $this->newName;
     }
 
-    /**
-     * @return \DateTimeImmutable
-     */
     public function getOccurredOn(): \DateTimeImmutable
     {
         return $this->occurredOn;
     }
 
-    /**
-     * @return RecipeId
-     */
     public function getRecipeId(): RecipeId
     {
         return $this->recipeId;

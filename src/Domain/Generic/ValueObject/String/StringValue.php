@@ -4,7 +4,7 @@ namespace Beeriously\Domain\Generic\ValueObject\String;
 
 class StringValue
 {
-    private $value;
+    private string $value;
 
     public function __construct(string $string = null)
     {

@@ -13,44 +13,34 @@ use Doctrine\ORM\Mapping as ORM;
 class Grain
 {
     /**
-     * @var string
-     *
      * @ORM\Column(name="id", type="string", length=50, nullable=false)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $id;
+    private string $id;
 
     /**
-     * @var string
-     *
      * @ORM\Column(name="name", type="string", length=100, nullable=false)
      */
-    private $name = '';
+    private string $name = '';
 
     /**
-     * @var string
-     *
      * @ORM\Column(name="lovibond", type="decimal", precision=7, scale=2, nullable=false)
      */
-    private $lovibond;
+    private string $lovibond;
 
     /**
-     * @var string
-     *
      * @ORM\Column(name="lintner", type="integer", nullable=false)
      */
-    private $lintner;
+    private string $lintner;
 
     /**
-     * @var Beeriously\Domain\Ingredients\Grains\GrainType
-     *
      * @ORM\ManyToOne(targetEntity="Beeriously\Domain\Ingredients\Grains\GrainType")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="grain_type_id", referencedColumnName="id")
      * })
      */
-    private $grainType;
+    private GrainType $grainType;
 
     public function __construct(GrainName $name, GrainType $grainType, Lovibond $lovibond, DegreesLintner $lintner)
     {

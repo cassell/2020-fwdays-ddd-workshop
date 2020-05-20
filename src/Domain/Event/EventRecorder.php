@@ -7,7 +7,7 @@ use Beeriously\Application\Event\Events;
 
 trait EventRecorder
 {
-    private $events = [];
+    private array $events = [];
 
     protected function recordThat(Event $event)
     {

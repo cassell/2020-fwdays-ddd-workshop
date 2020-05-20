@@ -12,10 +12,7 @@ class DegreesFahrenheit implements Temperature
 
     private const FLOAT_PRECISION = 3;
 
-    /**
-     * @var float
-     */
-    private $degreesFahrenheit;
+    private float $degreesFahrenheit;
 
     public function __construct(float $value)
     {

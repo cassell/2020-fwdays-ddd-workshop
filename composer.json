@@ -2,7 +2,7 @@
     "type": "project",
     "license": "proprietary",
     "require": {
-        "php": "^7.3.0",
+        "php": "^7.4.0",
         "doctrine/doctrine-migrations-bundle": "^2.0",
         "ramsey/uuid": "^3.7",
         "symfony/console": "^5.0",

@@ -6,18 +6,9 @@ use Beeriously\Domain\Generic\ValueObject\Identifier;
 
 class RecipeWasCreated extends RecipeEvent
 {
-    /**
-     * @var RecipeId
-     */
-    private $recipeId;
-    /**
-     * @var RecipeName
-     */
-    private $name;
-    /**
-     * @var \DateTimeImmutable
-     */
-    private $occurredOn;
+    private RecipeId $recipeId;
+    private RecipeName $name;
+    private \DateTimeImmutable $occurredOn;
 
     public function __construct(RecipeId $recipeId, RecipeName $name, \DateTimeImmutable $occurredOn)
     {

@@ -14,47 +14,16 @@ use Beeriously\Domain\Measurements\Weight\Kilograms;
 
 class GrainWasAddedToRecipe extends RecipeEvent
 {
-    /**
-     * @var RecipeId
-     */
-    private $recipeId;
-    /**
-     * @var GrainId
-     */
-    private $grainId;
-    /**
-     * @var GrainName
-     */
-    private $grainName;
-    /**
-     * @var DegreesLintner
-     */
-    private $degreesLintner;
-    /**
-     * @var Lovibond
-     */
-    private $lovibond;
-    /**
-     * @var GrainTypeId
-     */
-    private $grainTypeId;
-    /**
-     * @var GrainTypeDescription
-     */
-    private $grainTypeDescription;
-    /**
-     * @var Kilograms
-     */
-    private $kilograms;
-    /**
-     * @var \DateTimeImmutable
-     */
-    private $occurredOn;
-
-    /**
-     * @var Identifier
-     */
-    private $eventId;
+    private RecipeId $recipeId;
+    private GrainId $grainId;
+    private GrainName $grainName;
+    private DegreesLintner $degreesLintner;
+    private Lovibond $lovibond;
+    private GrainTypeId $grainTypeId;
+    private GrainTypeDescription $grainTypeDescription;
+    private Kilograms $kilograms;
+    private \DateTimeImmutable $occurredOn;
+    private Identifier $eventId;
 
     public function __construct(RecipeId $recipeId,
                                 GrainId $grainId,
@@ -78,81 +47,51 @@ class GrainWasAddedToRecipe extends RecipeEvent
         $this->occurredOn = $occurredOn ?? new \DateTimeImmutable();
     }
 
-    /**
-     * @return RecipeId
-     */
     public function getRecipeId(): RecipeId
     {
         return $this->recipeId;
     }
 
-    /**
-     * @return GrainId
-     */
     public function getGrainId(): GrainId
     {
         return $this->grainId;
     }
 
-    /**
-     * @return GrainName
-     */
     public function getGrainName(): GrainName
     {
         return $this->grainName;
     }
 
-    /**
-     * @return DegreesLintner
-     */
     public function getDegreesLintner(): DegreesLintner
     {
         return $this->degreesLintner;
     }
 
-    /**
-     * @return Lovibond
-     */
     public function getLovibond(): Lovibond
     {
         return $this->lovibond;
     }
 
-    /**
-     * @return GrainTypeId
-     */
     public function getGrainTypeId(): GrainTypeId
     {
         return $this->grainTypeId;
     }
 
-    /**
-     * @return GrainTypeDescription
-     */
     public function getGrainTypeDescription(): GrainTypeDescription
     {
         return $this->grainTypeDescription;
     }
 
-    /**
-     * @return Kilograms
-     */
     public function getKilograms(): Kilograms
     {
         return $this->kilograms;
     }
 
-    /**
-     * @return \DateTimeImmutable
-     */
     public function getOccurredOn(): \DateTimeImmutable
     {
         return $this->occurredOn;
     }
 
-    /**
-     * @return Identifier
-     */
     public function getEventId(): Identifier
     {
         return $this->eventId;

@@ -4,14 +4,8 @@ namespace Beeriously\Domain\Brewers;
 
 class FullName
 {
-    /**
-     * @var FirstName
-     */
-    private $firstName;
-    /**
-     * @var LastName
-     */
-    private $lastName;
+    private FirstName $firstName;
+    private LastName $lastName;
 
     public function __construct(FirstName $firstName, LastName $lastName)
     {

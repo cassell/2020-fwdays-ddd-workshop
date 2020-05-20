@@ -7,10 +7,7 @@ class DegreesLintner
 {
     private const SYMBOL = "°L";
 
-    /**
-     * @var int
-     */
-    private $degrees;
+    private int $degrees;
 
     public function __construct(int $degrees)
     {

@@ -4,10 +4,7 @@ namespace Beeriously\Domain\Recipe;
 
 class RecipeName
 {
-    /**
-     * @var string
-     */
-    private $value;
+    private string $value;
 
     public function __construct(string $value)
     {

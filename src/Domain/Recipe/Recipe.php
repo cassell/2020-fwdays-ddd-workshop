@@ -7,13 +7,10 @@ use Beeriously\Domain\Measurements\Weight\Kilograms;
 
 class Recipe
 {
-    private $id; // persist in recipe table
-    private $events = [];  // persist in events table
+    private RecipeId $id; // persist in recipe table
+    private array $events = [];  // persist in events table
 
-    /**
-     * @var RecipeName
-     */
-    private $recipeName;
+    private string $recipeName;
 
     private function __construct(RecipeHistory $events)
     {

@@ -10,7 +10,7 @@ class AlcoholByWeight
     // https://www.homebrewersassociation.org/attachments/0000/2497/Math_in_Mash_SummerZym95.pdf
     const DENSITY_OF_ETHANOL = 0.794;
 
-    private $value;
+    private float $value;
 
     public function __construct(float $value)
     {

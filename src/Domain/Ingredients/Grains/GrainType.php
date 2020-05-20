@@ -13,20 +13,16 @@ use Doctrine\ORM\Mapping as ORM;
 class GrainType
 {
     /**
-     * @var string
-     *
      * @ORM\Column(name="id", type="string", length=50, nullable=false)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $id;
+    private string $id;
 
     /**
-     * @var string
-     *
      * @ORM\Column(name="description", type="string", length=100, nullable=false)
      */
-    private $description = '';
+    private string $description = '';
 
     public function getId(): GrainTypeId
     {

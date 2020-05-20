@@ -8,10 +8,7 @@ class Pounds
 {
     const POUNDS_PER_KILOGRAM = 0.45359237;
 
-    /**
-     * @var float
-     */
-    private $value;
+    private float $value;
 
     public function __construct(float $value)
     {

@@ -7,10 +7,7 @@ use Ramsey\Uuid\Uuid;
 
 class Identifier
 {
-    /**
-     * @var string
-     */
-    private $value;
+    private string $value;
 
     protected function __construct(string $value)
     {

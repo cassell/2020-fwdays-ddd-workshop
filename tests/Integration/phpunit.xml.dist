@@ -10,7 +10,7 @@
         <ini name="error_reporting" value="-1"/>
         <env name="KERNEL_CLASS" value="Beeriously\Kernel"/>
         <env name="APP_ENV" value="dev"/>
-        <env name="APP_DEBUG" value="1"/>
+        <env name="APP_DEBUG" value="0"/>
         <env name="DATABASE_URL" value="mysql://root:password@mariadb:3306/beeriously?charset=utf8mb4&amp;serverVersion=5.7"/>
         <server name="KERNEL_DIR" value="/application/src"/>
     </php>

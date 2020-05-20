@@ -4,10 +4,7 @@ namespace Beeriously\Domain\Brewing\Session;
 
 class BrewedOn
 {
-    /**
-     * @var \DateTimeInterface
-     */
-    private $dateTime;
+    private \DateTimeImmutable $dateTime;
 
     public function __construct(\DateTimeInterface $dateTime)
     {

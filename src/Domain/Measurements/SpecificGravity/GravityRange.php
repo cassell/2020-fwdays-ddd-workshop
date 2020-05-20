@@ -6,14 +6,8 @@ namespace Beeriously\Domain\Measurements\SpecificGravity;
 
 class GravityRange
 {
-    /**
-     * @var OriginalGravity
-     */
-    private $og;
-    /**
-     * @var FinalGravity
-     */
-    private $fg;
+    private OriginalGravity $og;
+    private FinalGravity $fg;
 
     public function __construct(OriginalGravity $og, FinalGravity $fg)
     {

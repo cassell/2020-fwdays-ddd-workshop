@@ -12,6 +12,6 @@ trait TemperatureStringFormat
 
     public function __toString(): string
     {
-        return round($this->getValue(), 3).' '.self::getSymbol();
+        return round($this->getValue(), 3).' '. $this->getSymbol();
     }
 }

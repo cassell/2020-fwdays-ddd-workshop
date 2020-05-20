@@ -2,6 +2,8 @@
 
 namespace Beeriously\Domain\Brewers;
 
+use Doctrine\ORM\Mapping as ORM;
+
 /**
  * Brewer
  *
@@ -12,40 +14,30 @@ class Brewer
 {
 
     /**
-     * @var string
-     *
      * @ORM\Column(name="id", type="string", length=50, nullable=false)
      * @ORM\Id
      */
-    private $id;
+    private string $id;
 
     /**
-     * @var string
-     *
      * @ORM\Column(name="username", type="string", length=50, nullable=false)
      */
-    private $username;
+    private string $username;
 
     /**
-     * @var string
-     *
      * @ORM\Column(name="first_name", type="string", length=100, nullable=false)
      */
-    private $firstName = '';
+    private string $firstName = '';
 
     /**
-     * @var string
-     *
      * @ORM\Column(name="last_name", type="string", length=100, nullable=false)
      */
-    private $lastName = '';
+    private string $lastName = '';
 
     /**
-     * @var string
-     *
      * @ORM\Column(name="email", type="string", length=255, nullable=false)
      */
-    private $email;
+    private string $email;
 
     public function __construct(Username $username,
                                 FullName $fullName,

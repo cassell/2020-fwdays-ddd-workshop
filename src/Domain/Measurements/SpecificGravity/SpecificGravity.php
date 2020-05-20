@@ -8,10 +8,7 @@ use Beeriously\Domain\Measurements\AlcoholConcentration\AlcoholByWeight;
 
 class SpecificGravity
 {
-    /**
-     * @var float
-     */
-    private $value;
+    private float $value;
 
     public function __construct(float $value)
     {

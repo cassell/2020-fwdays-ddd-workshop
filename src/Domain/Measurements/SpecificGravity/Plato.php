@@ -6,10 +6,7 @@ namespace Beeriously\Domain\Measurements\SpecificGravity;
 
 class Plato
 {
-    /**
-     * @var float
-     */
-    private $value;
+    private float $value;
 
     public function __construct(float $value)
     {
