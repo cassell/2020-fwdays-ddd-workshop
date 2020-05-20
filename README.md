@@ -1,5 +1,7 @@
 # 2020 fwdays Domain-driven Design Workshop
 
+* Please have some paper and a pencil handy to take notes and make your own diagrams
+
 If you want to follow along on your own computer and IDE I would suggest doing the following before the presentation:
 * Install a recent version of Docker and Docker Compose [https://www.docker.com/products/docker](https://www.docker.com/products/docker)
 * Clone this repo
@@ -11,7 +13,7 @@ git clone git@github.com:cassell/2020-fwdays-ddd-workshop.git
 * I would suggest pulling changes again right before the workshop as I might have changed something last minute
 * BYOIDE - Use the code editor that you are most comfortable with. 
 * No web server required. Code will be all backend code.
-* Please have some paper and a pencil handy to take notes and make your own diagrams
+
 
 However, you will be fine without any preparation for this workshop.
 
